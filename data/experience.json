@@ -1,0 +1,112 @@
+{
+  "roles": [
+    {
+      "id": "subcom-ii",
+      "timelineLabel": "NOW",
+      "current": true,
+      "code": "WRK-009 / ACTIVE",
+      "companyShort": "SubCom",
+      "company": "SubCom",
+      "title": "IT Service Delivery Intern II",
+      "dates": "May 2026 — Present",
+      "logo": "images/subcomllc_logo.jpg",
+      "description": "Working with the End User Support group and Cyber Security team on cross-functional projects. Authored a plan for implementing NIST 800-171 requirements in our environment, and contributing to the rollout of SAST, DAST, and AI/MCP security tooling. Built custom internal web assets in HTML, CSS, and JavaScript, and wrote PowerShell scripts to automate asset deployment."
+    },
+    {
+      "id": "ra",
+      "timelineLabel": "NOW",
+      "current": true,
+      "code": "WRK-008 / ACTIVE",
+      "companyShort": "RWU",
+      "company": "Roger Williams University",
+      "title": "Resident Advisor",
+      "dates": "Aug 2024 — Present",
+      "logo": "images/rwu.jpg",
+      "description": "Responsible for 20–40 residents depending on the year. Enforce housing policies, mediate conflicts, and serve as an on-call responder for two overnight shifts a week."
+    },
+    {
+      "id": "desktop",
+      "timelineLabel": "2026",
+      "current": false,
+      "code": "WRK-007 / COMPLETE",
+      "companyShort": "RWU",
+      "company": "Roger Williams University",
+      "title": "Desktop Support Specialist",
+      "dates": "Feb 2025 — May 2026",
+      "logo": "images/rwu.jpg",
+      "description": "Level-2 technician in the desktop support department. Assisted with the Windows 10 → 11 migration, imaged and deployed computers, and supported users across a diverse suite of software."
+    },
+    {
+      "id": "subcom-i",
+      "timelineLabel": "2025",
+      "current": false,
+      "code": "WRK-006 / COMPLETE",
+      "companyShort": "SubCom",
+      "company": "SubCom",
+      "title": "IT Service Delivery Intern",
+      "dates": "May 2025 — Aug 2025",
+      "logo": "images/subcomllc_logo.jpg",
+      "description": "Worked with a team supporting applications and hardware in a diverse corporate environment. Assisted with Windows 10 → 11 rollouts, O365 application support, and asset management in Active Directory + Intune. Participated in cybersecurity trainings and simulations, and responded to real-world threats."
+    },
+    {
+      "id": "ita",
+      "timelineLabel": "2024",
+      "current": false,
+      "code": "WRK-005 / COMPLETE",
+      "companyShort": "RWU",
+      "company": "Roger Williams University",
+      "title": "Information Technology Assistant",
+      "dates": "Aug 2023 — May 2024",
+      "logo": "images/rwu.jpg",
+      "description": "Worked in a fast-paced, customer-focused environment. The on-staff Linux and Docker specialist — helped users set up and deploy Linux virtual machines for class and personal use, and troubleshot Windows and macOS issues ranging from network connectivity to hardware."
+    },
+    {
+      "id": "marketing",
+      "timelineLabel": "2023",
+      "current": false,
+      "code": "WRK-003 / COMPLETE",
+      "companyShort": "Berwick",
+      "company": "Berwick Academy",
+      "title": "Marketing Intern",
+      "dates": "Oct 2022 — Apr 2023",
+      "logo": "images/berwickacademy.jpg",
+      "description": "Worked with the marketing team on recorded and live video content."
+    },
+    {
+      "id": "consultant",
+      "timelineLabel": "2023",
+      "current": false,
+      "code": "WRK-004 / COMPLETE",
+      "companyShort": "CCDS",
+      "company": "Coastal Community Driving School",
+      "title": "Information Technology Consultant",
+      "dates": "May 2021 — Aug 2023",
+      "logoText": "CC",
+      "description": "IT consultant for a local driving school. Helped with the transition to Zoom, hardware upgrades, and web management."
+    },
+    {
+      "id": "tesla",
+      "timelineLabel": "2022",
+      "current": false,
+      "code": "WRK-002 / COMPLETE",
+      "companyShort": "Tesla Gov.",
+      "company": "Tesla Government Inc.",
+      "title": "Junior Software Developer",
+      "dates": "Jun 2022 — Aug 2022",
+      "logo": "images/teslagov_logo.jpg",
+      "description": "Assisted senior developers with refactoring, formatting, and debugging. Worked on a team to build a custom support system during a hackathon, and successfully deployed it to pre-production."
+    },
+    {
+      "id": "bobs",
+      "timelineLabel": "2021",
+      "current": false,
+      "code": "WRK-001 / COMPLETE",
+      "companyShort": "Bob's",
+      "company": "Bob's Clam Hut",
+      "title": "Cashier & Busser",
+      "dates": "Summers 2020 & 2021",
+      "logoText": "B",
+      "description": "Started as a busser and was promoted to cashier over the summer."
+    }
+  ]
+}

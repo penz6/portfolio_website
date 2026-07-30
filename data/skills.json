@@ -1,0 +1,24 @@
+{
+  "groups": [
+    {
+      "name": "Languages & Development",
+      "items": ["PowerShell", "Python", "JavaScript", "Java", "HTML5", "React.js", "C", "C++", "Prolog", "Pytorch", "Scipy"]
+    },
+    {
+      "name": "Security & Compliance",
+      "items": ["Cisco IOS", "NIST 800-171", "Mimecast", "Darktrace Immune System", "Cisco AMP", "TestOut Ethical Hacker Pro"]
+    },
+    {
+      "name": "Systems & Infrastructure",
+      "items": ["Active Directory", "Office 365 Administration", "Windows", "macOS", "Linux", "Debian", "Docker", "Intune", "Entra ID"]
+    },
+    {
+      "name": "Design & Media",
+      "items": ["Autodesk Fusion 360", "Computer-Aided Design", "Photography", "Video Editing", "Live Events"]
+    },
+    {
+      "name": "Consulting & Service",
+      "items": ["IT Consulting", "Computer Consultation", "Customer Support", "Customer Service", "Communication", "Teamwork", "Retail & Sales"]
+    }
+  ]
+}
