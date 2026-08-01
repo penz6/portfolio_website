@@ -1140,11 +1140,13 @@ footer .container {
 .project-card:hover,
 .project-card:focus-within { transform: translateY(-4px); box-shadow: 7px 7px 0 var(--teal); }
 
-.project-card > a { height: 100%; display: flex; flex-direction: column; }
-.project-card > a:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+.project-card-content { height: 100%; display: flex; flex-direction: column; }
+.project-media:focus-visible,
+.project-action a:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
 
 .project-media {
   aspect-ratio: 16 / 10;
+  display: block;
   overflow: hidden;
   border-bottom: 1px solid var(--ink);
   background: var(--surface-muted);
@@ -1185,8 +1187,10 @@ footer .container {
 .project-card h3 { margin: 15px 0 9px; font-size: 1.02rem; line-height: 1.25; }
 .project-card p { margin: 0; color: var(--ink-soft); font-size: 0.77rem; line-height: 1.55; }
 .project-tags { margin: 18px 0; display: flex; flex-wrap: wrap; gap: 6px; }
-.project-tags span { padding: 3px 6px; border: 1px solid var(--rule); background: var(--paper); font: 0.53rem var(--mono); text-transform: uppercase; }
-.project-action { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--ink); color: var(--ink); }
+.project-tags span { padding: 3px 6px; color: var(--ink); border: 1px solid var(--rule); background: var(--paper); font: 0.53rem var(--mono); text-transform: uppercase; }
+.project-action { margin-top: auto; padding-top: 12px; gap: 12px; border-top: 1px solid var(--ink); color: var(--ink); }
+.project-action a { display: inline-flex; align-items: center; gap: 5px; }
+.project-action a:hover { color: var(--teal); }
 .project-action b { color: var(--orange); font-size: 0.9rem; font-weight: 500; }
 
 @media (hover: hover) and (pointer: fine) and (min-width: 821px) {
