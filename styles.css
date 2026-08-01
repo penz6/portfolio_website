@@ -1101,28 +1101,9 @@ footer .container {
 
 .project-intro {
   margin-bottom: 28px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 28px;
 }
 
 .project-intro .prose { margin: 0; }
-
-.repo-link {
-  flex: 0 0 auto;
-  padding: 9px 12px;
-  color: var(--reverse);
-  border: 1px solid var(--navy);
-  background: var(--navy);
-  font: 600 0.62rem var(--mono);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  transition: color 140ms ease, background 140ms ease;
-}
-
-.repo-link:hover,
-.repo-link:focus-visible { color: var(--navy); background: var(--orange); }
 
 .projects-grid {
   display: grid;
@@ -1245,8 +1226,6 @@ footer .container {
 }
 
 @media (max-width: 680px) {
-  .project-intro { display: block; }
-  .repo-link { margin-top: 18px; display: inline-block; }
   .projects-grid { grid-template-columns: 1fr; }
 }
 
