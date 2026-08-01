@@ -202,8 +202,9 @@ function initializeStretchCursor() {
     if (colorResetTimer) clearTimeout(colorResetTimer);
 
     const onDark = Boolean(target.closest(".nav, .hero, footer, .timeline-entry.active"));
-    const fill = onDark ? "#d2612d" : "#176b75";
-    const ink = onDark ? "#092c39" : "#f4f1e7";
+    const onPoster = target.matches(".project-media");
+    const fill = onPoster ? "#d2612d" : onDark ? "#d2612d" : "#176b75";
+    const ink = onPoster ? "#0b2635" : onDark ? "#092c39" : "#f4f1e7";
 
     target.style.setProperty("--cursor-merge-fill", fill);
     target.style.setProperty("--cursor-merge-ink", ink);
