@@ -181,7 +181,6 @@ function initializeStretchCursor() {
   const mergeCleanupTimers = new WeakMap();
   let mergedTarget = null;
   let animationFrame = 0;
-  let colorResetTimer = 0;
   let releaseAngle = 0;
   let releaseStretch = 0;
   let visible = false;
@@ -199,8 +198,6 @@ function initializeStretchCursor() {
   function mergeIntoTarget(target) {
     const cleanupTimer = mergeCleanupTimers.get(target);
     if (cleanupTimer) clearTimeout(cleanupTimer);
-    if (colorResetTimer) clearTimeout(colorResetTimer);
-
     const onDark = Boolean(target.closest(".nav, .hero, footer, .timeline-entry.active"));
     const onPoster = target.matches(".project-media");
     const fill = onPoster ? "#d2612d" : onDark ? "#d2612d" : "#176b75";
@@ -222,7 +219,6 @@ function initializeStretchCursor() {
 
     const target = mergedTarget;
     const bounds = target.getBoundingClientRect();
-    const fill = target.style.getPropertyValue("--cursor-merge-fill");
     const originX = Math.min(Math.max(pointer.x, bounds.left), bounds.right);
     const originY = Math.min(Math.max(pointer.y, bounds.top), bounds.bottom);
 
@@ -241,12 +237,7 @@ function initializeStretchCursor() {
     releaseAngle = Math.atan2(pointer.y - originY, pointer.x - originX);
     releaseStretch = 0.8;
     cursor.classList.remove("is-merged");
-    cursor.style.color = fill;
-
-    if (colorResetTimer) clearTimeout(colorResetTimer);
-    colorResetTimer = window.setTimeout(() => {
-      cursor.style.removeProperty("color");
-    }, 170);
+    cursor.style.removeProperty("color");
   }
 
   function render() {
