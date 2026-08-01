@@ -1154,8 +1154,9 @@ footer .container {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
-  object-position: top center;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
   filter: saturate(0.78) contrast(1.04);
   transition: transform 220ms ease, filter 220ms ease;
 }
