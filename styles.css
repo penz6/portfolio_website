@@ -1134,7 +1134,7 @@ footer .container {
   min-width: 0;
   border: 1px solid var(--ink);
   background: var(--paper-light);
-  transition: transform 150ms ease, box-shadow 150ms ease;
+  transition: flex 280ms cubic-bezier(0.2, 0.8, 0.2, 1), transform 180ms ease, box-shadow 180ms ease;
 }
 
 .project-card:hover,
@@ -1189,6 +1189,66 @@ footer .container {
 .project-action { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--ink); color: var(--ink); }
 .project-action b { color: var(--orange); font-size: 0.9rem; font-weight: 500; }
 
+@media (hover: hover) and (pointer: fine) and (min-width: 821px) {
+  .projects-grid {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .project-card {
+    flex: 1 1 0;
+  }
+
+  .project-card:hover,
+  .project-card:focus-within {
+    flex: 1.75 1 0;
+  }
+
+  .project-card p,
+  .project-card .project-tags,
+  .project-card .project-action {
+    max-height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    overflow: hidden;
+    border-top-color: transparent;
+    opacity: 0;
+    transform: translateY(8px);
+    transition:
+      max-height 240ms ease,
+      margin 240ms ease,
+      padding 240ms ease,
+      border-color 180ms ease,
+      opacity 180ms ease,
+      transform 240ms ease;
+  }
+
+  .project-card:hover p,
+  .project-card:focus-within p {
+    max-height: 9rem;
+    opacity: 1;
+    transform: none;
+  }
+
+  .project-card:hover .project-tags,
+  .project-card:focus-within .project-tags {
+    max-height: 5rem;
+    margin: 18px 0;
+    opacity: 1;
+    transform: none;
+  }
+
+  .project-card:hover .project-action,
+  .project-card:focus-within .project-action {
+    max-height: 4rem;
+    margin-top: auto;
+    padding-top: 12px;
+    border-top-color: var(--ink);
+    opacity: 1;
+    transform: none;
+  }
+}
 @media (max-width: 820px) {
   .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -1201,5 +1261,8 @@ footer .container {
 
 @media (prefers-reduced-motion: reduce) {
   .project-card,
-  .project-media img { transition: none; }
+  .project-media img,
+  .project-card p,
+  .project-card .project-tags,
+  .project-card .project-action { transition: none; }
 }
